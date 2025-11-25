@@ -1,3 +1,5 @@
+import ambiance from '../images/Ambiance/Ambiance-1.jpg';
+
 export default function Ambiance() {
   return (
     <section className="relative py-32 overflow-hidden" style={{
@@ -21,7 +23,8 @@ export default function Ambiance() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0a1628]/60 to-[#0a1628]"></div>
         <img
-          src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          // src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src = {ambiance}
           alt="Restaurant Ambiance"
           className="w-full h-full object-cover opacity-50"
         />

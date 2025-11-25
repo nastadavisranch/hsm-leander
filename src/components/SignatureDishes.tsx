@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import pic1 from "../images/2.jpg"; // update paths to your images
 import pic2 from "../images/3.jpg";
 
+
 export default function SignatureDishes() {
   return (
     <section

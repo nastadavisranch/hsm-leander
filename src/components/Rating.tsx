@@ -38,7 +38,7 @@ export default function Rating() {
           Based on reviews from food lovers like you!
         </p>
         <a
-          href="https://www.google.com/maps"
+          href="https://www.google.com/search?sca_esv=22c7c7a659e0beaf&hl=en-IN&sxsrf=AE3TifNuPnfcpe5g1e5mnxWuoU6yBxG17w:1764016548034&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E073h5JN40Zo7vczQOUtGWAW9rLT76DdngeR9UPmLGod0H_y6PXlrVOfesZrJZuANhM1JUV_Z0YQwADhoQ0ZCzzLcZtf3RVX7jIRFcMnZc7QXSv1qB2OL4Uvf8oZ0iI33ReUU2IM31zsNqRme-zeDYQPaIQJ&q=HYDERABADI+SPICY+MATKA+-+LEANDER+-+INDIAN+CUISINE+Reviews&sa=X&ved=2ahUKEwjnx-Td0YuRAxW_wzgGHfprI6cQ0bkNegQIIBAF&biw=1229&bih=556&dpr=1.56"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 py-4 bg-[#d4af37] text-[#f5f5dc] font-serif text-lg rounded-md hover:bg-[#e6c158] transition-all duration-300 shadow-2xl hover:shadow-[#d4af37]/50 hover:scale-105"

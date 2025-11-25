@@ -18,9 +18,7 @@ export default function Navbar() {
     color: '#d4af37',
   };
 
-  const orderOnlineUrl =
-    "https://order.toasttab.com/online/hyderabadi-spicy-matka-austin-13920-ronald-reagan-boulevard?diningOption=takeout&rwg_token=ACgRB3fzbgWj3AOY84RWOd5sf-8R3Z7EX_2ckvqtpWB8Mvd_LCCJr9BmT89NiZreWNM1EAAuawhsMCTZSglmyTTBQcr0JB787g%3D%3D";
-
+  const orderOnlineUrl ="https://order.toasttab.com/online/hyderabadi-spicy-matka-austin-13920-ronald-reagan-boulevard?diningOption=takeout&rwg_token=ACgRB3fzbgWj3AOY84RWOd5sf-8R3Z7EX_2ckvqtpWB8Mvd_LCCJr9BmT89NiZreWNM1EAAuawhsMCTZSglmyTTBQcr0JB787g%3D%3D";
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a1628] border-b border-[#b8860b]/20 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

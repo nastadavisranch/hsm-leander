@@ -1,4 +1,4 @@
-import about from '../images/about.png';
+import about from '../images/exterior/exterior-1.jpg';
 
 export default function About() {
   return (
@@ -33,7 +33,7 @@ export default function About() {
             </h3>
             <div className="space-y-6 text-[#f5f5dc] leading-relaxed text-lg">
               <p>
-                Our restaurant takes its name from the traditional clay pot cooking method that has defined Hyderabadi cuisine for centuries. The 'matka' – a clay pot – is not just a cooking vessel; it's the secret behind the rich, earthy flavors that make our dishes unforgettable.
+                Our restaurant takes its name from the traditional clay pot cooking method that has defined Hyderabadi cuisine for centuries. The 'matka' a clay pot is not just a cooking vessel; it's the secret behind the rich, earthy flavors that make our dishes unforgettable.
               </p>
               <p>
                 When food is slow-cooked in these porous clay pots, the ingredients breathe, allowing flavors to meld and deepen in ways modern cookware simply cannot replicate. The clay imparts a subtle, distinctive taste while keeping the food moist and tender.
@@ -47,13 +47,21 @@ export default function About() {
           <div className="relative">
             <div className="absolute inset-0 bg-[#d4af37]/10 rounded-lg transform rotate-3"></div>
             <img
-  src='https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800'
+  src= {about}
   alt="Traditional Clay Matka"
   className="relative rounded-lg border-2 border-[#d4af37]/30"
   style={{
     boxShadow: '0 4px 12px rgba(212, 175, 55, 0.15)' // smaller, softer shadow
   }}
 />
+
+{/* 
+<img
+  src={about}
+  alt="Traditional Clay Matka"
+  className="relative rounded-lg border-2 border-[#d4af37]/30 w-full h-auto object-cover"
+/> */}
+
 
           </div>
         </div>
