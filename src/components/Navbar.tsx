@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logo from '../images/logo.png';
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +12,8 @@ export default function Navbar() {
     { name: 'Menu', to: '/menu' },
     { name: 'Gallery', to: '/gallery' },
     { name: 'About', to: '/about' },
-    { name: 'Contact', to: '/contact' },
+    {name:"Catering", to: '/catering'},
+    { name: 'Contact Us', to: '/contact' },
   ];
 
   const activeLinkStyle = {

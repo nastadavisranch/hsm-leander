@@ -8,7 +8,7 @@ export default function Footer() {
       { name: 'Menu', to: '/menu' },
       { name: 'Gallery', to: '/gallery' },
       { name: 'About', to: '/about' },
-      { name: 'Contact', to: '/contact' },
+      { name: 'Contact Us', to: '/contact' },
     ];
     
     const orderOnlineUrl = "https://order.toasttab.com/online/hyderabadi-spicy-matka-austin-13920-ronald-reagan-boulevard?diningOption=takeout&rwg_token=ACgRB3fzbgWj3AOY84RWOd5sf-8R3Z7EX_2ckvqtpWB8Mvd_LCCJr9BmT89NiZreWNM1EAAuawhsMCTZSglmyTTBQcr0JB787g%3D%3D";
@@ -50,14 +50,14 @@ export default function Footer() {
             <ul className="space-y-3 text-[#f5f5dc]">
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-[#d4af37] mt-1 shrink-0"/>
-                <a href="mailto:Hsmaustin.Leander@gmail.com" className="hover:text-[#e6c158] transition-colors">
-                  Hsmaustin.Leander@gmail.com
+                <a href="mailto:hsmaustin.leander@gmail.com" className="hover:text-[#e6c158] transition-colors">
+                  hsmaustin.leander@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-[#d4af37] mt-1 shrink-0"/>
                 <a href="tel:+17373406589" className="hover:text-[#e6c158] transition-colors">
-                  +1 737-340-6589
+                  +1 512-456-0273
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="text-2xl font-serif font-bold text-[#d4af37] mb-4">Opening Hours</h3>
+            <h3 className="text-2xl font-serif font-bold text-[#d4af37] mb-4">Hours of Operation</h3>
             <ul className="space-y-2 text-[#f5f5dc]">
               <li className="flex justify-between"><span>MON - THUR:</span> <span className="text-[#d4af37]">11:00 AM - 11:00 PM</span></li>
               <li className="flex justify-between"><span>FRI - SAT:</span> <span className="text-[#d4af37]">08:00 AM - 12:00 AM</span></li>
@@ -94,20 +94,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-[#d4af37]/20 pt-8 pb-8">
-          <div className="text-center mb-6">
-            <h4 className="text-lg font-serif text-[#f5f5dc] mb-3">Delivery Partners</h4>
-            <div className="flex justify-center items-center gap-8 text-[#d4af37] text-sm font-semibold">
-              <span>DOORDASH</span>
-              <span>UBER EATS</span>
-              <span>GRUBHUB</span>
-            </div>
-          </div>
-          {/* <p className="text-center text-[#f5f5dc]/60 text-sm">
-            © {new Date().getFullYear()} Hyderabadi Spicy Matka. All rights reserved.
-          </p> */}
-        </div>
+
       </div>
 
 {/* --- Sub-footer with black background and white text --- */}
@@ -118,14 +105,19 @@ export default function Footer() {
         © 2025 Hyderabadi Spicy Matka. All rights reserved.
       </p>
       <div className="flex flex-col md:flex-row items-center gap-x-6 gap-y-2 opacity-60">
-        <a
-          href="https://www.claratechitsolutions.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#D4C37F] transition-colors duration-200"
-        >
-          Designed and Developed by CLARATECH IT SOLUTIONS PVT LTD
-        </a>
+<p className="text-sm">
+  <span className="block md:inline">
+    Designed and Developed by
+  </span>{' '}
+  <a
+    href="https://www.claratechitsolutions.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block md:inline hover:text-[#D4C37F] transition-colors duration-200 font-medium"
+  >
+    CLARATECH IT SOLUTIONS PVT LTD
+  </a>
+</p>
         <span className="hidden md:inline">|</span>
         <span>Privacy Policy</span>
         <span>Terms & Conditions</span>

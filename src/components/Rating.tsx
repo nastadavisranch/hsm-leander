@@ -30,7 +30,7 @@ export default function Rating() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <div className="mb-6">
           <span className="text-8xl md:text-9xl font-bold text-[#d4af37]">
-            4.7
+            4.4
           </span>
           <span className="text-6xl md:text-7xl font-bold text-[#d4af37]"> / 5</span>
         </div>

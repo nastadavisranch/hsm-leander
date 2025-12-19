@@ -11,6 +11,7 @@ import AboutPage from '../src/pages/About';
 import MenuPage from '../src/pages/Menu';
 import GalleryPage from '../src/pages/Gallery';
 import ContactPage from '../src/pages/Contact';
+import CateringPage from './components/CateringPage';
 
 /**
  * The main application component.
@@ -31,6 +32,8 @@ function App() {
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            
+            <Route path='/catering' element={<CateringPage/>}/>
           </Routes>
         </main>
         <Footer />
