@@ -14,7 +14,7 @@ const sectionBgStyle: React.CSSProperties = {
 };
 
 const cateringFormUrl =
-  "https://forms.gle/JWqQcgKxumprdtup8";
+  "https://forms.gle/4mCcMmwJ9KW4p5qx5";
 
 export default function CateringPage() {
   return (

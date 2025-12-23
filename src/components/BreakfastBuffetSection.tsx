@@ -1,7 +1,7 @@
 import { Coffee } from "lucide-react";
 import { Link } from "react-router-dom";
 import breakfast from "../images/Breakfast.png"
-
+import breakfastMenu from "../images/breakfast_menu.pdf";
 
 // Safe background style for esbuild
 const sectionBgStyle: React.CSSProperties = {
@@ -40,12 +40,14 @@ export default function BreakfastBuffetSection() {
               current availability and timings.
             </p>
 
-            <Link
-              to="/menu/breakfast"
-              className="inline-block bg-[#d4af37] text-[#0B132B] font-semibold px-8 py-4 rounded-lg hover:bg-[#e6c158] transition-all duration-300"
-            >
-              Explore Breakfast Menu
-            </Link>
+           <a
+  href={breakfastMenu}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-[#d4af37] text-[#0B132B] font-semibold px-8 py-4 rounded-lg hover:bg-[#e6c158] transition-all duration-300"
+>
+  Explore Breakfast Menu
+</a>
           </div>
 
           {/* Image */}
