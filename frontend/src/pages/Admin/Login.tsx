@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Lock, ShieldCheck } from 'lucide-react';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
 export default function Login() {
   const navigate = useNavigate();
   const [password, setPassword] = useState('');
@@ -43,5 +47,9 @@ export default function Login() {
         </button>
       </form>
     </div>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
   );
 }

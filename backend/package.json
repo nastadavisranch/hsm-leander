@@ -19,6 +19,10 @@
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "mongoose": "^9.2.1",
+<<<<<<< HEAD
+=======
+    "morgan": "^1.10.1",
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
     "multer": "^2.0.2",
     "multer-s3": "^3.0.1",
     "node-cron": "^4.2.1",

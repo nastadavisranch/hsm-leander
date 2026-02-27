@@ -65,12 +65,20 @@ export default function Dashboard() {
     if (!window.confirm("Delete this special?")) return;
     try {
       await specialsApi.delete(id, adminSecret);
+<<<<<<< HEAD
       setSpecials(prev => prev.filter(s => s._id !== id));
+=======
+      setSpecials(prev => prev.filter(s => s.id !== id));
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
     } catch (err) { alert("Failed to delete"); }
   };
 
   const handleEdit = (s: any) => {
+<<<<<<< HEAD
     setEditId(s._id);
+=======
+    setEditId(s.id);
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
     setTitle(s.title);
     setDescription(s.description);
     setValidUpTo(s.validUpTo ? new Date(s.validUpTo).toISOString().split('T')[0] : '');
@@ -104,7 +112,11 @@ export default function Dashboard() {
 
         <div className="grid gap-4">
           {specials.map(s => (
+<<<<<<< HEAD
             <div key={s._id} className="bg-white p-4 rounded-xl border flex items-center gap-4 shadow-sm">
+=======
+            <div key={s.id} className="bg-white p-4 rounded-xl border flex items-center gap-4 shadow-sm">
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
               <img src={s.imageLink} className="w-24 h-24 object-cover rounded-lg" alt={s.title} />
               <div className="flex-1">
                 <h3 className="font-bold text-lg">{s.title}</h3>
@@ -115,7 +127,11 @@ export default function Dashboard() {
                 <button onClick={() => handleEdit(s)} className="p-2 text-blue-600 hover:bg-blue-50 rounded">
                   <Edit size={20} />
                 </button>
+<<<<<<< HEAD
                 <button onClick={() => handleDelete(s._id)} className="p-2 text-red-600 hover:bg-red-50 rounded">
+=======
+                <button onClick={() => handleDelete(s.id)} className="p-2 text-red-600 hover:bg-red-50 rounded">
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
                   <Trash2 size={20} />
                 </button>
               </div>

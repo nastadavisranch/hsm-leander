@@ -6,7 +6,11 @@ import { Upload, CheckCircle, Trash2, Edit, X } from 'lucide-react';
 import { specialsApi } from '../api/api';
 
 interface Special {
+<<<<<<< HEAD
   _id: string;
+=======
+  id: string;
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
   title: string;
   description: string;
   validUpTo: string;
@@ -59,7 +63,11 @@ export default function AdminSpecials() {
   };
 
   const handleEdit = (special: Special) => {
+<<<<<<< HEAD
     setEditingId(special._id);
+=======
+    setEditingId(special.id);
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
     setTitle(special.title);
     setDescription(special.description);
     // Format date for input "YYYY-MM-DD"
@@ -171,7 +179,11 @@ export default function AdminSpecials() {
             {specials.length === 0 && <p className="text-gray-400 text-center">No specials found.</p>}
 
             {specials.map(special => (
+<<<<<<< HEAD
               <div key={special._id} className="flex items-center justify-between bg-[#0a1628] p-4 rounded-lg border border-[#d4af37]/20 hover:border-[#d4af37]/50 transition-colors">
+=======
+              <div key={special.id} className="flex items-center justify-between bg-[#0a1628] p-4 rounded-lg border border-[#d4af37]/20 hover:border-[#d4af37]/50 transition-colors">
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
                 <div className="flex items-center gap-4">
                   <img src={special.imageLink} alt={special.title} className="w-16 h-16 object-cover rounded bg-gray-800" />
                   <div>
@@ -189,7 +201,11 @@ export default function AdminSpecials() {
                     <Edit size={18} />
                   </button>
                   <button
+<<<<<<< HEAD
                     onClick={() => handleDelete(special._id)}
+=======
+                    onClick={() => handleDelete(special.id)}
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
                     className="p-2 text-red-400 hover:bg-red-900/20 rounded-full transition-colors border border-transparent hover:border-red-400/30"
                     title="Delete"
                   >
