@@ -72,7 +72,15 @@ const { DeleteObjectCommand } = require("@aws-sdk/client-s3");
 const { s3 } = require('../config/s3');
 
 // GET all active specials
+<<<<<<< HEAD
 exports.getSpecials = async (req, res) => {
+=======
+//--------------------------------------------------------------------------------
+
+//gives error due to Timezone Mismatch and Date Format
+
+/*exports.getSpecials = async (req, res) => {
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
   try {
     const now = new Date();
     const specials = await Special.findAll({
@@ -83,8 +91,45 @@ exports.getSpecials = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+<<<<<<< HEAD
 };
 
+=======
+};*/
+//---------------------------------------------------------------------------------
+const { Op } = require('sequelize');
+
+exports.getSpecials = async (req, res) => {
+  try {
+    const now = new Date();
+    const specials = await Special.findAll({
+      // Re-enable this once you confirm data is in the DB
+      where: {
+        validUpTo: {
+          [Op.gte]: now // "Greater than or equal to now"
+        }
+      },
+      order: [['createdAt', 'DESC']]
+    });
+    res.json(specials);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+/*
+//-----------------------------------------------------------
+exports.getSpecials = async (req, res) => {
+  try {
+    // Remove the 'where' clause temporarily to see EVERYTHING
+    const specials = await Special.findAll({
+      order: [['createdAt', 'DESC']]
+    });
+    res.json(specials);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};*/
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
 // CREATE special
 exports.createSpecial = async (req, res) => {
   try {
@@ -123,4 +168,40 @@ exports.deleteSpecial = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+<<<<<<< HEAD
+=======
+};
+  
+// Update an existing special
+exports.updateSpecial = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, description, validUpTo } = req.body;
+
+    // 1. Find the existing record by its Primary Key (ID)
+    const special = await Special.findByPk(id);
+
+    if (!special) {
+      return res.status(404).json({ error: 'Special not found' });
+    }
+
+    // 2. Update text fields (use existing value if new one isn't provided)
+    special.title = title || special.title;
+    special.description = description || special.description;
+    special.validUpTo = validUpTo || special.validUpTo;
+
+    // 3. Handle image replacement
+    if (req.file) {
+      // Logic to delete old image from S3 would go here using special.s3Key
+      special.imageLink = req.file.location;
+      special.s3Key = req.file.key;
+    }
+
+    // 4. Save changes back to PostgreSQL
+    await special.save();
+    res.json(special);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
 };

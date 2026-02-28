@@ -61,10 +61,17 @@ export default function Specials() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {events.map((event) => (
                 <EventCard
+<<<<<<< HEAD
                   key={event._id}
                   title={event.title}
                   description={event.description}
                   imageUrl={event.imageLink} // Link from MongoDB/S3
+=======
+                  key={event.id}
+                  title={event.title}
+                  description={event.description}
+                  imageUrl={event.imageLink} 
+>>>>>>> 5bdc087 (debug admin login error, fix database error and added update event in dashboard)
                 />
               ))}
             </div>
